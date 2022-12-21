@@ -1,11 +1,10 @@
 import express from "express";
+import { router } from "./routes";
 
 const app = express();
 
 app.use(express.json());
 
-app.get("/", (request, response)=> {
- console.log("ola")
-})
+app.use(router);
 
 app.listen(3333)
