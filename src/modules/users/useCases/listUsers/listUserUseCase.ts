@@ -1,10 +1,10 @@
 import { User } from "../../model/User";
-import { UsersRepository } from "../../repositories/implementations/UsersRepository";
+import { IUsersRepository } from "../../repositories/IUsersRepository";
 
 
 class ListUserUseCase {
 
- constructor(private usersRepository: UsersRepository) {}
+ constructor(private usersRepository: IUsersRepository) {}
 
  execute(email:string):User[] {
   // só mudar para id quando for entregar

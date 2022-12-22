@@ -4,8 +4,7 @@
 
 - [x] Deve ser capaz de criar novos usuários <br />
 - [x] Deve ser capaz de listar todos os usuários <br />
-- [ ] Deve ser capaz de encontrar o usuário por ID <br />
-- [ ] Deve ser capaz de encontrar o usuário pelo endereço de e-mail <br />
+- [x] Deve ser capaz de encontrar o usuário por ID <br />
 - [ ] Deve ser capaz de transformar um usuário como administrador <br />
 <br />
 
