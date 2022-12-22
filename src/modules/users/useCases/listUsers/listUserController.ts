@@ -8,7 +8,7 @@ class ListUserController {
  constructor(private listUserUseCase: ListUserUseCase) {}
 
  handle(request:Request, response:Response):Response {
-  const { email } = request.body;
+  const { email } = request.headers;
 
   const users = this.listUserUseCase.execute(email);
 

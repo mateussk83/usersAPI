@@ -2,22 +2,26 @@ import { Router } from "express";
 import { createUserController } from "../modules/users/useCases/createUser";
 import { listUserController } from "../modules/users/useCases/listUsers";
 import { showUserProfileController } from "../modules/users/useCases/showUserProfile";
+import { turnUserAdminController } from "../modules/users/useCases/TurnUserAdmin";
 
 
-const userRoutes = Router();
+const usersRoutes = Router();
 
-userRoutes.post("/users", (request, response) => {
+usersRoutes.post("/users", (request, response) => {
  return createUserController.handle(request, response);
 })
 
-userRoutes.get("/users", (request, response) => {
+usersRoutes.get("/users", (request, response) => {
  return listUserController.handle(request, response);
 })
 
-userRoutes.get("/user", (request, response) => {
+usersRoutes.get("/users/:id", (request, response) => {
  return showUserProfileController.handle(request, response);
 })
 
+usersRoutes.patch("/users/:id/admin", (request, response) => {
+ return turnUserAdminController.handle(request, response)
+})
 
 
-export { userRoutes }
+export { usersRoutes }

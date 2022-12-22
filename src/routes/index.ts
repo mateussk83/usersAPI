@@ -1,11 +1,11 @@
 import { Router } from "express";
-import { userRoutes } from "./user.routes";
+import { usersRoutes } from "./users.routes";
 
 
 
 const router = Router();
 
-router.use("/users", userRoutes);
+router.use("/users", usersRoutes);
 
 
 export { router }
