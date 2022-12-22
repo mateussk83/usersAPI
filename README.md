@@ -7,7 +7,6 @@
 - [ ] Deve ser capaz de encontrar o usuário por ID <br />
 - [ ] Deve ser capaz de encontrar o usuário pelo endereço de e-mail <br />
 - [ ] Deve ser capaz de transformar um usuário como administrador <br />
-m
 <br />
 
 ## **Regras de negócio**
