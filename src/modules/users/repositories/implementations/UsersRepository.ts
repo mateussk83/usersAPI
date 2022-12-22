@@ -19,8 +19,13 @@ class UsersRepository {
  }
 
 
- findByEmail(email: string):any {
+ findByEmail(email?: string):any {
   const user = this.users.find((user) => user.email === email);
+  return user;
+ }
+ findById(id:string):any {
+  const user = this.users.find((user) => user.id === id);
+
   return user;
  }
 
@@ -34,6 +39,10 @@ class UsersRepository {
    created_at: new Date()
   })
   this.users.push(user)
+ }
+
+ list():User[] {
+  return this.users 
  }
 }
 
